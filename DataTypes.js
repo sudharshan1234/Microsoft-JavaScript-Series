@@ -77,6 +77,48 @@ console.log(flo1.toString());
 console.log((100).toString());
 
 
+//ARRAYS
+
+let arraylength=5;
+let arr1=[];
+let arr2=new Array(arraylength);
+
+console.log(arr1.length);
+console.log(arr2.length);
+
+let arr1=["A",true,2];
+console.log(arr1[0]);
+console.log(arr1[1]);
+
+let arraylength=2;
+let arr2=new Array(arraylength);
+arr2[0]="Value at index 0";
+console.log(arr2[0]);
+console.log(arr2[1]);
 
 
+let arr3=Array(3);
+arr3[2]="adding a value";
+console.log(arr3[2]);//last index
+console.log(arr3[arr3.length-1]); //index 2
+console.log(arr3[0]);//No value
+console.log(arr3[1]);//No value
 
+//Array Methods
+
+let arr1=["A",true,2];
+
+console.log(arr1.push("new value")); //Returns size after adding
+console.log(arr1);
+console.log(arr1.pop());// returns element removed
+console.log(arr1);
+
+//Unshift to enter at beginning
+console.log(arr1.unshift("new value"));//Returns size after adding
+console.log(arr1);
+console.log(arr1.shift());// returns element removed
+console.log(arr1);
+
+let arr2=["B",false,3]
+arr3=arr1.concat(arr2);
+console.log(arr3);
