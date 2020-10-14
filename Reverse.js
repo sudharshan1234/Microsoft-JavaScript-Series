@@ -3,7 +3,6 @@
 // const value="Reverse me";
 // let reversedValue="";
 
-
 // value.split("").forEach((char)=>{
 //     reversedValue=char+reversedValue;
 // });
@@ -12,15 +11,14 @@
 
 //WITH FUNCTION
 
-function reverseString(value){
-    let reversedValue="";
+function reverseString(value) {
+  let reversedValue = "";
 
+  value.split("").forEach((char) => {
+    reversedValue = char + reversedValue;
+  });
 
-    value.split("").forEach((char)=>{
-        reversedValue=char+reversedValue;
-    });
-
-    return reversedValue;
+  return reversedValue;
 }
 
 console.log(reverseString("Reverse Me2"));
